@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Priscila Santana Souza | Fisioterapia Domiciliar Humanizada em SP</title>
+    <meta name="description" content="Fisioterapia domiciliar especializada em São Paulo (Zona Sul e regiões). Atendimento humanizado em geriatria, neurofuncional, ortopedia e alívio da dor no conforto do seu lar. CREFITO-3 452755-F.">
+    <meta name="keywords" content="fisioterapia domiciliar, fisioterapeuta a domicilio, fisioterapia zona sul sp, geriatria, reabilitação idoso em casa, fisioterapia neurofuncional, Priscila Santana Souza, CREFITO-3">
+    
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dra. Priscila Santana Souza | Fisioterapia Domiciliar em SP">
+    <meta property="og:description" content="Mais movimento, menos dor, mais qualidade de vida no aconchego do seu lar. Atendimento humanizado para idosos, neurofuncional e reabilitação.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0d7c66;
+            --primary-dark: #064e3b;
+            --primary-light: #41b3a2;
+            --primary-subtle: #e6f4f1;
+            --secondary: #d97706;
+            --accent-warm: #fef3c7;
+            --dark: #0f172a;
+            --slate-600: #475569;
+            --slate-500: #64748b;
+            --slate-100: #f1f5f9;
+            --slate-50: #f8fafc;
+            --white: #ffffff;
+            --whatsapp-green: #25d366;
+            --whatsapp-dark: #128c7e;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--dark);
+            background-color: var(--slate-50);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--dark);
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* TOP BAR */
+        .topbar {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.92);
+            font-size: 0.875rem;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .topbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .topbar-items {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .topbar-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.15);
+            padding: 3px 10px;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .brand-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 1.4rem;
+            box-shadow: 0 4px 10px rgba(13, 124, 102, 0.3);
+        }
+        .brand-text h3 {
+            font-size: 1.15rem;
+            letter-spacing: -0.02em;
+            color: var(--primary-dark);
+            margin-bottom: 2px;
+        }
+        .brand-text span {
+            font-size: 0.75rem;
+            color: var(--slate-500);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--slate-600);
+            transition: color 0.2s;
+            position: relative;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.2s ease;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--whatsapp-green);
+            color: white;
+            padding: 12px 22px;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #f0fdf9 0%, #ffffff 50%, #f7fefc 100%);
+            padding: 70px 0 90px;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -100px;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(65, 179, 162, 0.15) 0%, rgba(255,255,255,0) 70%);
+            z-index: 0;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 50px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary-subtle);
+            color: var(--primary-dark);
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-bottom: 20px;
+            border: 1px solid rgba(13, 124, 102, 0.15);
+        }
+        .hero-title {
+            font-size: 3.1rem;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
+            color: #042f2e;
+        }
+        .hero-title span.highlight {
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+        .hero-title span.highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 6px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: rgba(65, 179, 162, 0.25);
+            z-index: -1;
+            border-radius: 4px;
+        }
+        .hero-description {
+            font-size: 1.15rem;
+            color: var(--slate-600);
+            margin-bottom: 32px;
+            max-width: 580px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--whatsapp-green);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.25s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: var(--whatsapp-dark);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+        }
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            color: var(--primary-dark);
+            padding: 16px 28px;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid #cbd5e1;
+            transition: all 0.25s ease;
+        }
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: var(--primary-subtle);
+        }
+        .hero-trust {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 24px;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .trust-icon {
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+        .trust-text strong {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--dark);
+        }
+        .trust-text span {
+            font-size: 0.8rem;
+            color: var(--slate-500);
+        }
+
+        /* HERO IMAGE WRAPPER */
+        .hero-image-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .hero-image-card {
+            position: relative;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            border: 6px solid white;
+            background: white;
+            max-width: 440px;
+            width: 100%;
+        }
+        .hero-image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 22px;
+            transition: transform 0.4s ease;
+        }
+        .hero-image-card:hover img {
+            transform: scale(1.02);
+        }
+        .hero-badge-float-1 {
+            position: absolute;
+            top: 25px;
+            left: -25px;
+            background: white;
+            padding: 14px 20px;
+            border-radius: 18px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid #f1f5f9;
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+        .hero-badge-float-2 {
+            position: absolute;
+            bottom: 30px;
+            right: -25px;
+            background: white;
+            padding: 14px 22px;
+            border-radius: 18px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid #f1f5f9;
+            animation: floatSlow 4s ease-in-out infinite 2s;
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* STATS / HIGHLIGHT STRIP */
+        .stats-strip {
+            background: white;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 36px 0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            text-align: center;
+        }
+        .stat-card h3 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+        .stat-card p {
+            font-size: 0.95rem;
+            color: var(--slate-600);
+            font-weight: 500;
+        }
+
+        /* SECTION BASE */
+        .section {
+            padding: 90px 0;
+        }
+        .section-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 55px;
+        }
+        .section-subtitle {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .section-title {
+            font-size: 2.35rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            color: #064e3b;
+        }
+        .section-desc {
+            font-size: 1.05rem;
+            color: var(--slate-600);
+        }
+
+        /* CARDS & BENEFITS */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .benefit-card {
+            background: white;
+            padding: 36px 28px;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .benefit-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-light);
+        }
+        .benefit-icon-box {
+            width: 58px;
+            height: 58px;
+            border-radius: 16px;
+            background: var(--primary-subtle);
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 22px;
+            font-size: 1.5rem;
+        }
+        .benefit-card h4 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+        .benefit-card p {
+            color: var(--slate-600);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* SERVICES SECTION */
+        .services-section {
+            background: linear-gradient(180deg, #f8fafc 0%, #e6f4f1 100%);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .service-card {
+            background: white;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-xl);
+        }
+        .service-card-top {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: white;
+            padding: 24px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .service-card-body {
+            padding: 28px 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .service-card-body h4 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #064e3b;
+        }
+        .service-card-body p {
+            color: var(--slate-600);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .service-list {
+            list-style: none;
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+        .service-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.88rem;
+            color: var(--slate-600);
+            margin-bottom: 10px;
+        }
+        .service-list li svg {
+            flex-shrink: 0;
+            color: var(--primary);
+            margin-top: 3px;
+        }
+        .service-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--primary-subtle);
+            color: var(--primary-dark);
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(13, 124, 102, 0.2);
+        }
+        .service-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* ABOUT SECTION */
+        .about-section {
+            background: white;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .about-image-col {
+            position: relative;
+        }
+        .about-main-img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: var(--shadow-xl);
+            display: block;
+            border: 4px solid white;
+        }
+        .about-experience-card {
+            position: absolute;
+            bottom: -25px;
+            right: -25px;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: white;
+            padding: 22px 28px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-xl);
+            max-width: 250px;
+        }
+        .about-experience-card strong {
+            font-size: 2rem;
+            display: block;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .about-experience-card span {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            line-height: 1.3;
+            display: block;
+        }
+        .quote-box {
+            background: var(--primary-subtle);
+            border-left: 4px solid var(--primary);
+            padding: 18px 24px;
+            border-radius: 0 16px 16px 0;
+            margin: 24px 0;
+            font-style: italic;
+            font-size: 1.05rem;
+            color: var(--primary-dark);
+        }
+        .credentials-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 28px 0;
+        }
+        .credential-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .credential-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background: #e0f2fe;
+            color: #0284c7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1rem;
+        }
+        .credential-text strong {
+            display: block;
+            font-size: 0.92rem;
+            color: var(--dark);
+        }
+        .credential-text span {
+            font-size: 0.82rem;
+            color: var(--slate-500);
+        }
+        .signature-box {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+            padding-top: 24px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .signature-img {
+            height: 48px;
+            filter: contrast(1.2);
+        }
+
+        /* HOW IT WORKS */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+        .step-card {
+            background: white;
+            padding: 32px 24px;
+            border-radius: var(--radius-xl);
+            border: 1px solid #e2e8f0;
+            position: relative;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+        .step-number {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            font-weight: 800;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 10px rgba(13, 124, 102, 0.3);
+        }
+        .step-card h4 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+        .step-card p {
+            font-size: 0.9rem;
+            color: var(--slate-600);
+            line-height: 1.5;
+        }
+
+        /* REGIONS / COVERAGE */
+        .coverage-section {
+            background: #ffffff;
+        }
+        .coverage-box {
+            background: linear-gradient(135deg, #064e3b 0%, #0d7c66 100%);
+            color: white;
+            border-radius: 32px;
+            padding: 50px 48px;
+            box-shadow: var(--shadow-xl);
+        }
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .coverage-content h3 {
+            font-size: 2.1rem;
+            color: white;
+            margin-bottom: 16px;
+        }
+        .coverage-content p {
+            font-size: 1.05rem;
+            opacity: 0.9;
+            margin-bottom: 24px;
+        }
+        .neighborhood-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 28px;
+        }
+        .neighborhood-tag {
+            background: rgba(255,255,255,0.18);
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 7px 16px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+        .coverage-card-white {
+            background: white;
+            color: var(--dark);
+            padding: 32px;
+            border-radius: 24px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .coverage-card-white h4 {
+            font-size: 1.25rem;
+            margin-bottom: 14px;
+            color: #064e3b;
+        }
+        .coverage-card-white p {
+            color: var(--slate-600);
+            font-size: 0.92rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 32px;
+            border-radius: var(--radius-xl);
+            border: 1px solid #e2e8f0;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .stars {
+            color: #f59e0b;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+        }
+        .testimonial-card p {
+            font-size: 0.95rem;
+            color: var(--slate-600);
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .author-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--primary-subtle);
+            color: var(--primary);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .author-info strong {
+            display: block;
+            font-size: 0.92rem;
+            color: var(--dark);
+        }
+        .author-info span {
+            font-size: 0.8rem;
+            color: var(--slate-500);
+        }
+
+        /* FAQ ACCORDION */
+        .faq-container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: white;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+        .faq-item.active {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+        }
+        .faq-question {
+            width: 100%;
+            padding: 22px 26px;
+            text-align: left;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            font-family: inherit;
+        }
+        .faq-question:hover {
+            color: var(--primary);
+        }
+        .faq-icon {
+            font-size: 1.25rem;
+            color: var(--primary);
+            transition: transform 0.25s ease;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 26px;
+            color: var(--slate-600);
+            font-size: 0.98rem;
+            line-height: 1.6;
+        }
+        .faq-item.active .faq-answer {
+            padding-bottom: 22px;
+        }
+
+        /* CALL TO ACTION BANNER */
+        .cta-banner {
+            background: linear-gradient(135deg, #064e3b 0%, #0d7c66 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cta-banner::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 200px;
+            background: radial-gradient(ellipse, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+        }
+        .cta-banner h2 {
+            color: white;
+            font-size: 2.7rem;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+        .cta-banner p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 680px;
+            margin: 0 auto 36px;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #091a18;
+            color: #94a3b8;
+            padding: 70px 0 30px;
+            font-size: 0.92rem;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        .footer-col h4 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        .footer-links {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        .footer-links a:hover {
+            color: white;
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.85rem;
+        }
+
+        /* FLOATING WHATSAPP BUTTON */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .whatsapp-float-btn {
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background: var(--whatsapp-green);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .whatsapp-float-btn:hover {
+            transform: scale(1.08);
+            background: var(--whatsapp-dark);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
+        }
+        .whatsapp-pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: var(--whatsapp-green);
+            opacity: 0.6;
+            animation: pulseWave 2s infinite;
+            z-index: -1;
+        }
+        @keyframes pulseWave {
+            0% { transform: scale(1); opacity: 0.6; }
+            70% { transform: scale(1.5); opacity: 0; }
+            100% { transform: scale(1.5); opacity: 0; }
+        }
+        .whatsapp-tooltip {
+            background: white;
+            color: var(--dark);
+            padding: 10px 18px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid #e2e8f0;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            animation: bounceLeft 3s infinite;
+        }
+        @keyframes bounceLeft {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
+            40% { transform: translateX(-5px); }
+            60% { transform: translateX(-3px); }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .hero-title { font-size: 2.5rem; }
+            .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+            .hero-description { margin: 0 auto 30px; }
+            .hero-buttons { justify-content: center; }
+            .hero-trust { justify-content: center; }
+            .hero-image-wrapper { margin-top: 20px; }
+            .benefits-grid, .services-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .steps-grid { grid-template-columns: repeat(2, 1fr); }
+            .coverage-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-cta { display: none; }
+            .menu-toggle { display: block; }
+            .hero-title { font-size: 2.1rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .benefits-grid, .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
+            .steps-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .hero-badge-float-1, .hero-badge-float-2 { display: none; }
+            .whatsapp-tooltip { display: none; }
+            .credentials-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-items">
+                <span class="topbar-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    São Paulo - Capital & Zona Sul
+                </span>
+                <span>Atendimento domiciliar de Segunda a Sábado com horário agendado</span>
+            </div>
+            <div class="topbar-items">
+                <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20fisioterapia." target="_blank" style="display:flex;align-items:center;gap:6px;color:#86efac;font-weight:600;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                    (11) 99808-5565
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <div class="brand-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </div>
+                <div class="brand-text">
+                    <h3>Movimento & Alívio</h3>
+                    <span>Dra. Priscila Santana • CREFITO-3 452755-F</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#diferenciais">Vantagens</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#como-funciona">Como Funciona</a></li>
+                <li><a href="#regioes">Regiões</a></li>
+                <li><a href="#duvidas">FAQ</a></li>
+            </ul>
+
+            <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20fisioterapia%20domiciliar." target="_blank" class="nav-cta">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                Agendar no WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="pill-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Fisioterapia Especializada em Domicílio
+                </div>
+                <h1 class="hero-title font-serif">
+                    Mais movimento, <span class="highlight">menos dor</span> e mais vida no seu lar.
+                </h1>
+                <p class="hero-description">
+                    Cuidado fisioterapêutico humanizado e 100% individualizado para idosos, reabilitação neurofuncional, pós-operatórios e alívio de dores na Zona Sul e toda a capital de São Paulo.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20fisioterapia%20domiciliar." target="_blank" class="btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                        Agendar Avaliação Domiciliar
+                    </a>
+                    <a href="#especialidades" class="btn-secondary">
+                        Ver Especialidades
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <div class="trust-text">
+                            <strong>CREFITO-3 Registrada</strong>
+                            <span>Inscrição nº 452755-F</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                        </div>
+                        <div class="trust-text">
+                            <strong>Atenção Exclusiva</strong>
+                            <span>1 paciente por horário</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="hero-image-card">
+                    <img src="images/foto_priscila_bola.jpg" alt="Dra. Priscila Santana Souza - Fisioterapeuta" loading="eager">
+                </div>
+
+                <!-- Floating badges -->
+                <div class="hero-badge-float-1">
+                    <div style="background:#ecfdf5;color:#059669;width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    </div>
+                    <div>
+                        <strong style="font-size:0.92rem;display:block;color:#064e3b;">Cuidar é Transformar</strong>
+                        <span style="font-size:0.78rem;color:#64748b;">Atendimento Humanizado</span>
+                    </div>
+                </div>
+
+                <div class="hero-badge-float-2">
+                    <div style="background:#eff6ff;color:#2563eb;width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <div>
+                        <strong style="font-size:0.92rem;display:block;color:#1e3a8a;">Fisioterapeuta até você</strong>
+                        <span style="font-size:0.78rem;color:#64748b;">Conforto do seu lar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <div class="stats-strip">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>Atenção Individualizada</p>
+            </div>
+            <div class="stat-card">
+                <h3>0 Estresse</h3>
+                <p>Sem Trânsito ou Salas de Espera</p>
+            </div>
+            <div class="stat-card">
+                <h3>CREFITO-3</h3>
+                <p>Nº 452755-F Regulamentada</p>
+            </div>
+            <div class="stat-card">
+                <h3>Recibo / NF</h3>
+                <p>Apto para Reembolso e IRPF</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIFERENCIAIS / VANTAGENS -->
+    <section class="section" id="diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Por que o atendimento em casa faz toda a diferença?</span>
+                <h2 class="section-title font-serif">Vantagens exclusivas da Fisioterapia Domiciliar</h2>
+                <p class="section-desc">
+                    Tratamento de alto padrão com todo o conforto, segurança e a dignidade que você e sua família merecem.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h4>Conforto & Segurança</h4>
+                    <p>Evite o desgaste de trânsito em São Paulo, estacionamentos e salas de espera cheias. O paciente é atendido em sua própria poltrona ou cama, com tranquilidade.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h4>100% de Tempo Dedicado</h4>
+                    <p>Diferente de clínicas onde um fisioterapeuta divide atenção com vários pacientes ao mesmo tempo, a sessão domiciliar tem 1 hora de dedicação exclusiva para você.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h4>Reabilitação no Ambiente Real</h4>
+                    <p>Treinamos a autonomia nas tarefas do dia a dia: levantar da cama, subir as escadas da casa, caminhar até a cozinha e prevenir quedas no espaço onde o paciente realmente vive.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h4>Cuidado Humanizado & Afeto</h4>
+                    <p>Escuta atenta, paciência e respeito com o ritmo de cada pessoa. Uma abordagem acolhedora que reduz o medo e a ansiedade, especialmente em idosos.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h4>Equipamentos Levados até Você</h4>
+                    <p>Faixas elásticas (TheraBands), bolas terapêuticas, aparelhos de eletroterapia, ventosas e materiais de suporte: levamos tudo higienizado e pronto para a sessão.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h4>Orientação à Família & Cuidadores</h4>
+                    <p>Instruções claras e seguras para os familiares sobre postura correta na transferência da cama, prevenção de escaras e adaptações que aumentam a segurança da casa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESPECIALIDADES -->
+    <section class="section services-section" id="especialidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Áreas de Atuação</span>
+                <h2 class="section-title font-serif">Tratamentos Especializados para Cada Necessidade</h2>
+                <p class="section-desc">Planos de tratamento desenvolvidos de forma personalizada após avaliação minuciosa.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <div class="service-card-top">
+                        <span style="font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.05em;">Foco no Idoso</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"></circle><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path></svg>
+                    </div>
+                    <div class="service-card-body">
+                        <h4>Fisioterapia Geriátrica & Gerontologia</h4>
+                        <p>Cuidado integral ao idoso focado em promover o envelhecimento ativo, independência funcional e longevidade com autonomia.</p>
+                        <ul class="service-list">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Treino de equilíbrio e prevenção rigorosa de quedas</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Fortalecimento muscular e melhora da flexibilidade</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Manutenção da marcha e autonomia para sentar e levantar</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Fisioterapia%20Geri%C3%A1trica." target="_blank" class="service-btn">
+                            Agendar para Idoso
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <div class="service-card-top" style="background:linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);">
+                        <span style="font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.05em;">Pós-Graduanda</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="M12 8v8"></path></svg>
+                    </div>
+                    <div class="service-card-body">
+                        <h4>Fisioterapia Neurofuncional</h4>
+                        <p>Reabilitação especializada de sequelas de alterações neurológicas, estimulando a neuroplasticidade para máxima recuperação.</p>
+                        <ul class="service-list">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Recuperação pós-AVC (Acidente Vascular Cerebral)</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Controle motor na Doença de Parkinson e Alzheimer</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Reabilitação de esclerose múltipla e neuropatias</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Fisioterapia%20Neurofuncional." target="_blank" class="service-btn">
+                            Reabilitação Neurológica
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <div class="service-card-top" style="background:linear-gradient(135deg, #0f766e 0%, #0d9488 100%);">
+                        <span style="font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.05em;">Recuperação</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16v1a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1"></path><path d="M18 8h4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4"></path></svg>
+                    </div>
+                    <div class="service-card-body">
+                        <h4>Ortopedia & Pós-Operatórios</h4>
+                        <p>Tratamento acelerado de lesões musculoesqueléticas, fraturas e reabilitação cirúrgica com protocolos seguros e eficazes.</p>
+                        <ul class="service-list">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Pós-operatório de fêmur, prótese de quadril e joelho</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Alívio de dores crônicas: lombalgia, hérnia de disco e ciático</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Artrose, tendinite, bursite e pós-imobilização</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Reabilita%C3%A7%C3%A3o%20Ortop%C3%A9dica." target="_blank" class="service-btn">
+                            Consultar Ortopedia
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card">
+                    <div class="service-card-top" style="background:linear-gradient(135deg, #b45309 0%, #d97706 100%);">
+                        <span style="font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.05em;">Técnica Senac</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <div class="service-card-body">
+                        <h4>Massoterapia & Alívio da Dor</h4>
+                        <p>Integração da fisioterapia com técnicas avançadas de massoterapia para liberação muscular, drenagem e alívio imediato de tensões.</p>
+                        <ul class="service-list">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Liberação miofascial e massagem terapêutica</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Drenagem linfática (edemas, retenção e pós-cirúrgico)</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Ventosaterapia e técnicas orientais para dor crônica</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20Massoterapia%20e%20Al%C3%ADvio%20da%20Dor." target="_blank" class="service-btn">
+                            Alívio de Dores
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="service-card">
+                    <div class="service-card-top" style="background:linear-gradient(135deg, #0369a1 0%, #0284c7 100%);">
+                        <span style="font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.05em;">Capacidade Pulmonar</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                    </div>
+                    <div class="service-card-body">
+                        <h4>Fisioterapia Respiratória</h4>
+                        <p>Exercícios respiratórios e manobras para expansão pulmonar, higiene brônquica e recuperação de conforto respiratório.</p>
+                        <ul class="service-list">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Recuperação pós-internação hospitalar e pneumonia</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Desobstrução brônquica e melhora da oxigenação</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Aumento da resistência física em idosos acamados</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Fisioterapia%20Respirat%C3%B3ria." target="_blank" class="service-btn">
+                            Fisioterapia Respiratória
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="service-card">
+                    <div class="service-card-top" style="background:linear-gradient(135deg, #4338ca 0%, #6366f1 100%);">
+                        <span style="font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.05em;">Autonomia</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                    </div>
+                    <div class="service-card-body">
+                        <h4>Prevenção & Envelhecimento Ativo</h4>
+                        <p>Manutenção da mobilidade e fortalecimento preventivo para que pessoas na terceira idade continuem ativas, lúcidas e independentes.</p>
+                        <ul class="service-list">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Exercícios funcionais personalizados para rotina diária</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Estímulo cognitivo e motor conjugado</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <span>Prevenção de atrofia por desuso ou sedentarismo</span>
+                            </li>
+                        </ul>
+                        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20agendar%20um%20plano%20de%20Preven%C3%A7%C3%A3o%20e%20Mobilidade." target="_blank" class="service-btn">
+                            Plano Preventivo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE A FISIOTERAPEUTA -->
+    <section class="section about-section" id="sobre">
+        <div class="container about-grid">
+            <div class="about-image-col">
+                <img src="images/foto_priscila_jaleco.jpg" alt="Dra. Priscila de Santana Souza" class="about-main-img">
+                <div class="about-experience-card">
+                    <strong>100%</strong>
+                    <span>Compromisso e Empatia com a Saúde da sua Família</span>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="section-subtitle">Conheça sua Fisioterapeuta</span>
+                <h2 class="section-title font-serif">Dra. Priscila de Santana Souza</h2>
+                <p style="font-weight:600;color:var(--primary);margin-bottom:12px;">Fisioterapeuta • CREFITO-3 nº 452755-F</p>
+                
+                <p style="color:var(--slate-600);margin-bottom:16px;">
+                    Com formação em Fisioterapia e especialização contínua na área <strong>Neurofuncional e Gerontológica</strong>, dedico minha carreira a levar saúde, dignidade e reabilitação para dentro do lar dos meus pacientes.
+                </p>
+
+                <div class="quote-box">
+                    "Cuidar é transformar vidas. A empatia é o primeiro passo para um cuidado humanizado e de qualidade. Meu compromisso é devolver a autonomia e a alegria de se movimentar com liberdade."
+                </div>
+
+                <div class="credentials-list">
+                    <div class="credential-item">
+                        <div class="credential-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        </div>
+                        <div class="credential-text">
+                            <strong>Graduação em Fisioterapia</strong>
+                            <span>Universidade Santo Amaro (UNISA)</span>
+                        </div>
+                    </div>
+
+                    <div class="credential-item">
+                        <div class="credential-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                        </div>
+                        <div class="credential-text">
+                            <strong>Pós-Graduanda em Neurofuncional</strong>
+                            <span>Especialista em reabilitação de AVC e Parkinson</span>
+                        </div>
+                    </div>
+
+                    <div class="credential-item">
+                        <div class="credential-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line></svg>
+                        </div>
+                        <div class="credential-text">
+                            <strong>Técnica em Massoterapia</strong>
+                            <span>Senac Largo Treze (Conclusão 2023)</span>
+                        </div>
+                    </div>
+
+                    <div class="credential-item">
+                        <div class="credential-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="credential-text">
+                            <strong>Registro Profissional Ativo</strong>
+                            <span>CREFITO-3: 452755-F (Conselho Regional)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signature-box">
+                    <img src="images/assinatura_priscila.png" alt="Assinatura Priscila Santana Souza" class="signature-img">
+                    <div>
+                        <strong style="display:block;font-size:1rem;color:#064e3b;">Priscila de Santana Souza</strong>
+                        <span style="font-size:0.85rem;color:#64748b;">Fisioterapeuta Domiciliar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOTOS DE ATENDIMENTOS REAIS -->
+    <section class="section" style="background:#f1f5f9;padding-top:60px;padding-bottom:60px;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom:35px;">
+                <span class="section-subtitle">Atendimento na Prática</span>
+                <h2 class="section-title font-serif">Cuidado e Dedicação que Geram Resultados</h2>
+                <p class="section-desc">Ambiente acolhedor, técnicas baseadas em evidências científicas e muita cumplicidade com o paciente.</p>
+            </div>
+
+            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;">
+                    <img src="images/foto_atendimento_exercicio.jpg" alt="Atendimento de Fisioterapia Domiciliar" style="width:100%;height:220px;object-fit:cover;display:block;">
+                    <div style="padding:18px;">
+                        <strong style="color:#064e3b;font-size:1.05rem;display:block;margin-bottom:4px;">Reabilitação de Joelho e Marcha</strong>
+                        <p style="font-size:0.88rem;color:#64748b;">Treino de força e amplitude com resistência elástica personalizada.</p>
+                    </div>
+                </div>
+
+                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;">
+                    <img src="images/banner_atendimento_idoso.jpg" alt="Atendimento humanizado ao idoso" style="width:100%;height:220px;object-fit:cover;display:block;">
+                    <div style="padding:18px;">
+                        <strong style="color:#064e3b;font-size:1.05rem;display:block;margin-bottom:4px;">Atenção e Empatia com Idosos</strong>
+                        <p style="font-size:0.88rem;color:#64748b;">Mobilização no leito ou poltrona com carinho e respeito.</p>
+                    </div>
+                </div>
+
+                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;">
+                    <img src="images/priscila_retrato.jpg" alt="Dra. Priscila Santana Souza" style="width:100%;height:220px;object-fit:cover;display:block;">
+                    <div style="padding:18px;">
+                        <strong style="color:#064e3b;font-size:1.05rem;display:block;margin-bottom:4px;">Acompanhamento Integral</strong>
+                        <p style="font-size:0.88rem;color:#64748b;">Avaliação detalhada e evolução contínua a cada sessão.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA (PASSO A PASSO) -->
+    <section class="section" id="como-funciona">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Simples e Rápido</span>
+                <h2 class="section-title font-serif">Como funciona o Atendimento Domiciliar?</h2>
+                <p class="section-desc">Veja como é fácil iniciar o tratamento no aconchego da sua residência.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h4>Contato pelo WhatsApp</h4>
+                    <p>Você entra em contato, relata o caso do paciente (ou o seu) e tira todas as primeiras dúvidas sobre horários e valores.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h4>Agendamento Confortável</h4>
+                    <p>Definimos o dia e o horário mais conveniente para a rotina do paciente e da família na sua casa.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h4>Avaliação Inicial Completa</h4>
+                    <p>Na primeira visita, realizamos testes físicos, histórico de saúde, análise do ambiente e traçamos os objetivos terapêuticos.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h4>Início das Sessões & Evolução</h4>
+                    <p>Execução do plano terapêutico com relatórios periódicos, exercícios orientados e acompanhamento contínuo dos resultados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGIÕES DE ATENDIMENTO -->
+    <section class="section coverage-section" id="regioes">
+        <div class="container">
+            <div class="coverage-box">
+                <div class="coverage-grid">
+                    <div class="coverage-content">
+                        <span style="color:#86efac;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;font-size:0.85rem;display:block;margin-bottom:8px;">Locais Atendidos</span>
+                        <h3 class="font-serif">Atendimento em toda São Paulo com foco na Zona Sul</h3>
+                        <p>Levamos toda a estrutura de fisioterapia com pontualidade e segurança até o seu endereço.</p>
+                        
+                        <div class="neighborhood-tags">
+                            <span class="neighborhood-tag">Pedreira</span>
+                            <span class="neighborhood-tag">Interlagos</span>
+                            <span class="neighborhood-tag">Santo Amaro</span>
+                            <span class="neighborhood-tag">Campo Belo</span>
+                            <span class="neighborhood-tag">Moema</span>
+                            <span class="neighborhood-tag">Brooklin</span>
+                            <span class="neighborhood-tag">Vila Mariana</span>
+                            <span class="neighborhood-tag">Jabaquara</span>
+                            <span class="neighborhood-tag">Morumbi</span>
+                            <span class="neighborhood-tag">Socorro</span>
+                            <span class="neighborhood-tag">Chácara Flora</span>
+                            <span class="neighborhood-tag">Saúde</span>
+                            <span class="neighborhood-tag">Demais regiões sob consulta</span>
+                        </div>
+
+                        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20consultar%20se%20atende%20no%20meu%20bairro." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:white;color:#064e3b;font-weight:700;padding:14px 28px;border-radius:9999px;font-size:0.95rem;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                            Consultar Meu Bairro no WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="coverage-card-white">
+                        <h4>Horários Flexíveis de Atendimento</h4>
+                        <p>Sabemos que cada família tem uma rotina. Organizamos os atendimentos de forma planejada para sua conveniência.</p>
+                        
+                        <div style="border-top:1px solid #f1f5f9;padding-top:16px;margin-bottom:16px;">
+                            <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-size:0.92rem;">
+                                <span style="color:#64748b;">Segunda a Sexta-feira:</span>
+                                <strong style="color:#0f172a;">07h00 às 19h00</strong>
+                            </div>
+                            <div style="display:flex;justify-content:space-between;font-size:0.92rem;">
+                                <span style="color:#64748b;">Sábados:</span>
+                                <strong style="color:#0f172a;">08h00 às 13h00</strong>
+                            </div>
+                        </div>
+
+                        <div style="background:#ecfdf5;border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:12px;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            <span style="font-size:0.85rem;color:#064e3b;font-weight:600;">Emissão de Declaração de Atendimento e Recibo oficial para Reembolso do Convênio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Histórias de Recuperação</span>
+                <h2 class="section-title font-serif">O que dizem os pacientes e famílias</h2>
+                <p class="section-desc">A confiança construída em cada atendimento e a evolução de cada paciente.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p>"A Dra. Priscila foi um anjo na recuperação do meu pai após o AVC. A paciência, o carinho e o profissionalismo dela devolveram a confiança para ele voltar a caminhar pela casa. Somos eternamente gratos!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <strong>Mariana Camargo</strong>
+                            <span>Filha de paciente (AVC) • Campo Belo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p>"Minha mãe tem 83 anos e estava com muito medo de cair após uma fratura de fêmur. Com os exercícios da Priscila no quarto e na sala, ela perdeu o medo e hoje tem uma autonomia maravilhosa. Super pontual e educada."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RS</div>
+                        <div class="author-info">
+                            <strong>Rodrigo Silveira</strong>
+                            <span>Fisioterapia Geriátrica • Interlagos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p>"Fiz cirurgia no joelho e não conseguia sair de casa para fazer fisioterapia em clínica. O atendimento domiciliar da Dra. Priscila foi impecável. Aliviou as dores rápido e me devolveu os movimentos."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EF</div>
+                        <div class="author-info">
+                            <strong>Eduardo Fontes</strong>
+                            <span>Pós-operatório de Joelho • Santo Amaro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ / PERGUNTAS FREQUENTES -->
+    <section class="section" style="background:#ffffff;" id="duvidas">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Tire suas dúvidas</span>
+                <h2 class="section-title font-serif">Perguntas Frequentes</h2>
+                <p class="section-desc">Esclareça aqui as principais perguntas sobre a fisioterapia em domicílio.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        <span>Preciso ter algum equipamento em casa para o atendimento?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer" style="max-height: 200px;">
+                        Não se preocupe com isso! A fisioterapeuta leva todos os equipamentos e acessórios necessários para a sessão: faixas elásticas (TheraBands), bolas terapêuticas, aparelhos para alívio da dor, ventosas e materiais de apoio, todos devidamente higienizados antes de cada atendimento.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>O plano de saúde / convênio reembolsa as sessões?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        Sim! A Dra. Priscila emite a <strong>Declaração de Atendimento Fisioterapêutico Domiciliar</strong> e o respectivo recibo profissional discriminado com CREFITO-3 ativo e CPF/CNPJ, documentos oficiais que os planos de saúde exigem para realizar o reembolso (de acordo com a apólice do seu convênio) e que também podem ser deduzidos no IRPF.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Qual a duração de cada sessão?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        Cada sessão tem duração de aproximadamente 50 a 60 minutos de atenção 100% exclusiva e personalizada ao paciente, sem pressa e respeitando as limitações e pausas necessárias do paciente.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como é feita a primeira avaliação?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        Na primeira consulta em domicílio, é realizada uma avaliação completa (anamnese, histórico médico, exames prévios, testes de força, equilíbrio, dor e amplitude de movimento), além de uma análise do ambiente doméstico para prevenir riscos. Com isso, é elaborado um plano de tratamento sob medida.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como agendar o primeiro horário?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        O agendamento é feito diretamente pelo WhatsApp nos números (11) 99808-5565 ou (11) 98555-9083. Você nos informa a localização e a condição clínica, e combinamos o melhor dia e horário na semana.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="cta-banner">
+        <div class="container">
+            <span style="color:#86efac;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;font-size:0.9rem;display:block;margin-bottom:12px;">Vamos começar?</span>
+            <h2 class="font-serif">Recupere sua mobilidade e qualidade de vida hoje mesmo</h2>
+            <p>Não adie o cuidado que pode transformar a sua rotina ou a de quem você mais ama. Converse diretamente com a Dra. Priscila de Santana Souza.</p>
+            <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+                <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20fisioterapia%20domiciliar." target="_blank" class="btn-primary" style="background:#25d366;font-size:1.1rem;padding:18px 36px;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                    Falar Agora no WhatsApp (11) 99808-5565
+                </a>
+                <a href="tel:+5511985559083" class="btn-secondary" style="background:transparent;color:white;border-color:rgba(255,255,255,0.4);">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Ligar (11) 98555-9083
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+                        <div class="brand-icon" style="width:38px;height:38px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        </div>
+                        <h4 style="margin-bottom:0;">Movimento & Alívio</h4>
+                    </div>
+                    <p style="font-size:0.88rem;line-height:1.6;margin-bottom:16px;">
+                        Fisioterapia domiciliar humanizada em São Paulo. Reabilitação com respeito, carinho e técnica individualizada no aconchego do seu lar.
+                    </p>
+                    <p style="font-size:0.82rem;color:#64748b;">
+                        Dra. Priscila de Santana Souza<br>
+                        Fisioterapeuta • CREFITO-3 nº 452755-F
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Especialidades</h4>
+                    <ul class="footer-links">
+                        <li><a href="#especialidades">Fisioterapia Geriátrica</a></li>
+                        <li><a href="#especialidades">Fisioterapia Neurofuncional</a></li>
+                        <li><a href="#especialidades">Reabilitação Ortopédica</a></li>
+                        <li><a href="#especialidades">Massoterapia e Dor</a></li>
+                        <li><a href="#especialidades">Fisioterapia Respiratória</a></li>
+                        <li><a href="#especialidades">Prevenção de Quedas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#diferenciais">Vantagens do Domiciliar</a></li>
+                        <li><a href="#sobre">Sobre a Fisioterapeuta</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#regioes">Regiões Atendidas</a></li>
+                        <li><a href="#duvidas">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contato Direto</h4>
+                    <ul class="footer-links">
+                        <li style="display:flex;align-items:center;gap:8px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                            <a href="https://wa.me/5511998085565" target="_blank">(11) 99808-5565</a>
+                        </li>
+                        <li style="display:flex;align-items:center;gap:8px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <a href="tel:+5511985559083">(11) 98555-9083</a>
+                        </li>
+                        <li style="display:flex;align-items:center;gap:8px;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>Atendimento Domiciliar em SP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Movimento & Alívio - Dra. Priscila Santana Souza. Todos os direitos reservados.</p>
+                <p style="color:#64748b;font-size:0.8rem;">Atendimento em conformidade com o Código de Ética e Deontologia da Fisioterapia (Resolução COFFITO nº 424/2013).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <div class="floating-whatsapp">
+        <div class="whatsapp-tooltip">
+            <span style="color:#22c55e;">●</span> Agende pelo WhatsApp
+        </div>
+        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20fisioterapia%20domiciliar." target="_blank" class="whatsapp-float-btn" aria-label="Falar com a Fisioterapeuta no WhatsApp">
+            <div class="whatsapp-pulse"></div>
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT FOR ACCORDION & INTERACTIONS -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
