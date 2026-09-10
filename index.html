@@ -122,15 +122,17 @@
             justify-content: space-between;
             align-items: center;
             height: 80px;
+            gap: 20px;
         }
         .brand-logo {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 12px;
+            flex-shrink: 0;
         }
         .brand-icon {
-            width: 46px;
-            height: 46px;
+            width: 44px;
+            height: 44px;
             border-radius: 12px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             display: flex;
@@ -138,34 +140,41 @@
             justify-content: center;
             color: white;
             font-weight: 800;
-            font-size: 1.4rem;
+            font-size: 1.35rem;
             box-shadow: 0 4px 10px rgba(13, 124, 102, 0.3);
+            flex-shrink: 0;
         }
         .brand-text h3 {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             letter-spacing: -0.02em;
             color: var(--primary-dark);
             margin-bottom: 2px;
+            white-space: nowrap;
         }
         .brand-text span {
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             color: var(--slate-500);
             font-weight: 600;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.04em;
             text-transform: uppercase;
+            white-space: nowrap;
+            display: block;
         }
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 28px;
+            gap: 18px;
             list-style: none;
+            margin: 0;
+            padding: 0;
         }
         .nav-links a {
-            font-size: 0.95rem;
-            font-weight: 500;
+            font-size: 0.88rem;
+            font-weight: 600;
             color: var(--slate-600);
             transition: color 0.2s;
             position: relative;
+            white-space: nowrap;
         }
         .nav-links a:hover {
             color: var(--primary);
@@ -189,23 +198,19 @@
             gap: 8px;
             background: var(--whatsapp-green);
             color: white;
-            padding: 12px 22px;
+            padding: 11px 22px;
             border-radius: 9999px;
-            font-weight: 600;
-            font-size: 0.9rem;
+            font-weight: 700;
+            font-size: 0.88rem;
             box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
             transition: transform 0.2s, box-shadow 0.2s;
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-left: 20px;
         }
         .nav-cta:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
-        }
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
         }
 
         /* HERO SECTION */
@@ -372,17 +377,19 @@
         }
         .hero-badge-float-1 {
             position: absolute;
-            top: 25px;
-            left: -25px;
+            top: 20px;
+            left: -130px;
             background: white;
-            padding: 14px 20px;
+            padding: 14px 22px;
             border-radius: 18px;
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-xl);
             display: flex;
             align-items: center;
             gap: 12px;
             border: 1px solid #f1f5f9;
             animation: floatSlow 4s ease-in-out infinite;
+            z-index: 10;
+            white-space: nowrap;
         }
         .hero-badge-float-2 {
             position: absolute;
@@ -670,18 +677,6 @@
         .credential-text span {
             font-size: 0.82rem;
             color: var(--slate-500);
-        }
-        .signature-box {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-top: 30px;
-            padding-top: 24px;
-            border-top: 1px solid #e2e8f0;
-        }
-        .signature-img {
-            height: 48px;
-            filter: contrast(1.2);
         }
 
         /* HOW IT WORKS */
@@ -1031,6 +1026,12 @@
         }
 
         /* RESPONSIVE */
+        @media (max-width: 1200px) {
+            .nav-links { gap: 12px; }
+            .nav-links a { font-size: 0.82rem; }
+            .hero-badge-float-1 { left: -80px; }
+        }
+
         @media (max-width: 1024px) {
             .hero-title { font-size: 2.5rem; }
             .hero-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
@@ -1043,11 +1044,16 @@
             .steps-grid { grid-template-columns: repeat(2, 1fr); }
             .coverage-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
+            .hero-badge-float-1, .hero-badge-float-2 { display: none; }
+        }
+
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .nav-cta { margin-left: auto; }
         }
 
         @media (max-width: 768px) {
             .nav-links, .nav-cta { display: none; }
-            .menu-toggle { display: block; }
             .hero-title { font-size: 2.1rem; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
             .benefits-grid, .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
@@ -1069,7 +1075,7 @@
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                     São Paulo - Capital & Zona Sul
                 </span>
-                <span>Atendimento domiciliar de Segunda a Sábado com horário agendado</span>
+                <span>Atendimento domiciliar com horário agendado</span>
             </div>
             <div class="topbar-items">
                 <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20fisioterapia." target="_blank" style="display:flex;align-items:center;gap:6px;color:#86efac;font-weight:600;">
@@ -1099,7 +1105,7 @@
                 <li><a href="#especialidades">Especialidades</a></li>
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#como-funciona">Como Funciona</a></li>
-                <li><a href="#regioes">Regiões</a></li>
+                <li><a href="#depoimentos">Avaliações</a></li>
                 <li><a href="#duvidas">FAQ</a></li>
             </ul>
 
@@ -1159,7 +1165,7 @@
 
             <div class="hero-image-wrapper">
                 <div class="hero-image-card">
-                    <img src="images/foto_priscila_bola.jpg" alt="Dra. Priscila Santana Souza - Fisioterapeuta" loading="eager">
+                    <img src="images/foto_hero_atendimento.jpg" alt="Dra. Priscila Santana Souza - Fisioterapeuta" loading="eager">
                 </div>
 
                 <!-- Floating badges -->
@@ -1534,7 +1540,7 @@
                     </div>
                     <div>
                         <strong style="display:block;font-size:1.05rem;color:#064e3b;">Dra. Priscila de Santana Souza</strong>
-                        <span style="font-size:0.85rem;color:#64748b;">Fisioterapeuta Especialista em Gerontologia e Neurofuncional • CREFITO-3: 452755-F</span>
+                        <span style="font-size:0.85rem;color:#64748b;">Fisioterapeuta • Atendimento Humanizado em São Paulo</span>
                     </div>
                 </div>
             </div>
@@ -1547,31 +1553,31 @@
             <div class="section-header" style="margin-bottom:35px;">
                 <span class="section-subtitle">Atendimento na Prática</span>
                 <h2 class="section-title font-serif">Cuidado e Dedicação que Geram Resultados</h2>
-                <p class="section-desc">Ambiente acolhedor, técnicas baseadas em evidências científicas e muita cumplicidade com o paciente.</p>
+                <p class="section-desc">Ambiente acolhedor, técnicas baseadas em evidências científicas e total cumplicidade com o paciente.</p>
             </div>
 
             <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
-                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;">
-                    <img src="images/foto_atendimento_exercicio.jpg" alt="Atendimento de Fisioterapia Domiciliar" style="width:100%;height:220px;object-fit:cover;display:block;">
-                    <div style="padding:18px;">
-                        <strong style="color:#064e3b;font-size:1.05rem;display:block;margin-bottom:4px;">Reabilitação de Joelho e Marcha</strong>
-                        <p style="font-size:0.88rem;color:#64748b;">Treino de força e amplitude com resistência elástica personalizada.</p>
+                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <img src="images/foto_domiciliar_lar.jpg" alt="Atendimento Domiciliar no Lar" style="width:100%;height:300px;object-fit:cover;object-position:center 20%;display:block;">
+                    <div style="padding:22px;">
+                        <strong style="color:#064e3b;font-size:1.15rem;display:block;margin-bottom:6px;">Atendimento Domiciliar no Lar</strong>
+                        <p style="font-size:0.9rem;color:#64748b;line-height:1.5;">Reabilitação ortopédica e fortalecimento com foco na autonomia, alívio de dores e recuperação no ambiente real do paciente.</p>
                     </div>
                 </div>
 
-                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;">
-                    <img src="images/banner_atendimento_idoso.jpg" alt="Atendimento humanizado ao idoso" style="width:100%;height:220px;object-fit:cover;display:block;">
-                    <div style="padding:18px;">
-                        <strong style="color:#064e3b;font-size:1.05rem;display:block;margin-bottom:4px;">Atenção e Empatia com Idosos</strong>
-                        <p style="font-size:0.88rem;color:#64748b;">Mobilização no leito ou poltrona com carinho e respeito.</p>
+                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <img src="images/foto_geriatrica_terceira_idade.jpg" alt="Fisioterapia Geriátrica e Longevidade" style="width:100%;height:300px;object-fit:cover;object-position:center 15%;display:block;">
+                    <div style="padding:22px;">
+                        <strong style="color:#064e3b;font-size:1.15rem;display:block;margin-bottom:6px;">Fisioterapia Geriátrica & Longevidade</strong>
+                        <p style="font-size:0.9rem;color:#64748b;line-height:1.5;">Atenção humanizada e especializada para idosos: treino de marcha, prevenção de quedas, equilíbrio e manutenção da vitalidade.</p>
                     </div>
                 </div>
 
-                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;">
-                    <img src="images/priscila_retrato.jpg" alt="Dra. Priscila Santana Souza" style="width:100%;height:220px;object-fit:cover;display:block;">
-                    <div style="padding:18px;">
-                        <strong style="color:#064e3b;font-size:1.05rem;display:block;margin-bottom:4px;">Acompanhamento Integral</strong>
-                        <p style="font-size:0.88rem;color:#64748b;">Avaliação detalhada e evolução contínua a cada sessão.</p>
+                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <img src="images/foto_neuro_autonomia.jpg" alt="Reabilitação Neurofuncional" style="width:100%;height:300px;object-fit:cover;object-position:center 20%;display:block;">
+                    <div style="padding:22px;">
+                        <strong style="color:#064e3b;font-size:1.15rem;display:block;margin-bottom:6px;">Reabilitação Neurofuncional</strong>
+                        <p style="font-size:0.9rem;color:#64748b;line-height:1.5;">Estímulo motor e reaprendizado funcional para pacientes neurológicos e cadeirantes, promovendo dignidade e autonomia.</p>
                     </div>
                 </div>
             </div>
@@ -1672,7 +1678,7 @@
         </div>
     </section>
 
-    <!-- DEPOIMENTOS -->
+    <!-- DEPOIMENTOS / GOOGLE AVALIAÇÕES -->
     <section class="section" id="depoimentos" style="background:#f8fafc;">
         <div class="container">
             <div class="section-header" style="margin-bottom:45px;">
@@ -1710,140 +1716,12 @@
                 </div>
             </div>
 
-            <!-- TESTIMONIALS CARDS -->
-            <div class="testimonials-grid">
-                <!-- Depoimento 1 Real -->
-                <div class="testimonial-card">
-                    <div>
-                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-                            <div class="stars">★★★★★</div>
-                            <span style="display:inline-flex;align-items:center;gap:4px;font-size:0.75rem;color:#16a34a;background:#dcfce7;padding:3px 8px;border-radius:9999px;font-weight:600;">
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Google Avaliações
-                            </span>
-                        </div>
-                        <p>"Procurei a Priscila com dores na lombar e já nas primeiras sessões senti muita melhora. O atendimento a domicílio dela é excelente, muito pontual, atenciosa e traz todos os aparelhos e materiais necessários. Recomendo muito!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar" style="background:#e0f2fe;color:#0284c7;">PL</div>
-                        <div class="author-info">
-                            <strong>Paciente Google</strong>
-                            <span>Alívio de Lombalgia • Atendimento Domiciliar</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 2 Real -->
-                <div class="testimonial-card">
-                    <div>
-                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-                            <div class="stars">★★★★★</div>
-                            <span style="display:inline-flex;align-items:center;gap:4px;font-size:0.75rem;color:#16a34a;background:#dcfce7;padding:3px 8px;border-radius:9999px;font-weight:600;">
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Google Avaliações
-                            </span>
-                        </div>
-                        <p>"A Dra. Priscila foi fundamental na reabilitação pós-AVC. A paciência, o carinho e o conhecimento técnico devolveram a confiança e o equilíbrio para voltar a andar pela casa. Cuidado humanizado que transforma vidas!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar" style="background:#fef3c7;color:#d97706;">MC</div>
-                        <div class="author-info">
-                            <strong>Mariana Camargo</strong>
-                            <span>Reabilitação Neurofuncional • Zona Sul SP</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Depoimento 3 Real -->
-                <div class="testimonial-card">
-                    <div>
-                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-                            <div class="stars">★★★★★</div>
-                            <span style="display:inline-flex;align-items:center;gap:4px;font-size:0.75rem;color:#16a34a;background:#dcfce7;padding:3px 8px;border-radius:9999px;font-weight:600;">
-                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                                Google Avaliações
-                            </span>
-                        </div>
-                        <p>"Minha mãe tem 83 anos e estava muito debilitada após uma queda. O carinho e os exercícios adaptados para a rotina da casa devolveram a mobilidade dela sem dor. Super educada, pontual e muito dedicada."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar" style="background:#fce7f3;color:#db2777;">RS</div>
-                        <div class="author-info">
-                            <strong>Rodrigo Silveira</strong>
-                            <span>Fisioterapia Geriátrica no Lar</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align:center;margin-top:35px;">
-                <a href="https://www.google.com/maps/place/?q=place_id:ChIJf11gvlBPzpQRhc9pDt_qtlk" target="_blank" style="display:inline-flex;align-items:center;gap:8px;color:#0d7c66;font-weight:700;font-size:1rem;text-decoration:underline;">
+            <!-- BOTÃO PARA CONFERIR DIRETAMENTE -->
+            <div style="text-align:center;margin-top:20px;">
+                <a href="https://www.google.com/maps/place/?q=place_id:ChIJf11gvlBPzpQRhc9pDt_qtlk" target="_blank" style="display:inline-flex;align-items:center;gap:10px;background:#ffffff;color:#0d7c66;padding:16px 32px;border-radius:9999px;font-weight:700;font-size:1.05rem;border:2px solid #0d7c66;box-shadow:var(--shadow-sm);transition:all 0.2s;">
                     <span>Conferir todas as 23 avaliações diretamente no Google Maps</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ / PERGUNTAS FREQUENTES -->
-    <section class="section" style="background:#ffffff;" id="duvidas">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Tire suas dúvidas</span>
-                <h2 class="section-title font-serif">Perguntas Frequentes</h2>
-                <p class="section-desc">Esclareça aqui as principais perguntas sobre a fisioterapia em domicílio.</p>
-            </div>
-
-            <div class="faq-container">
-                <div class="faq-item active">
-                    <button class="faq-question">
-                        <span>Preciso ter algum equipamento em casa para o atendimento?</span>
-                        <span class="faq-icon">▼</span>
-                    </button>
-                    <div class="faq-answer" style="max-height: 200px;">
-                        Não se preocupe com isso! A fisioterapeuta leva todos os equipamentos e acessórios necessários para a sessão: faixas elásticas (TheraBands), bolas terapêuticas, aparelhos para alívio da dor, ventosas e materiais de apoio, todos devidamente higienizados antes de cada atendimento.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>O plano de saúde / convênio reembolsa as sessões?</span>
-                        <span class="faq-icon">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        Sim! A Dra. Priscila emite a <strong>Declaração de Atendimento Fisioterapêutico Domiciliar</strong> e o respectivo recibo profissional discriminado com CREFITO-3 ativo e CPF/CNPJ, documentos oficiais que os planos de saúde exigem para realizar o reembolso (de acordo com a apólice do seu convênio) e que também podem ser deduzidos no IRPF.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Qual a duração de cada sessão?</span>
-                        <span class="faq-icon">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        Cada sessão tem duração de aproximadamente 50 a 60 minutos de atenção 100% exclusiva e personalizada ao paciente, sem pressa e respeitando as limitações e pausas necessárias do paciente.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Como é feita a primeira avaliação?</span>
-                        <span class="faq-icon">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        Na primeira consulta em domicílio, é realizada uma avaliação completa (anamnese, histórico médico, exames prévios, testes de força, equilíbrio, dor e amplitude de movimento), além de uma análise do ambiente doméstico para prevenir riscos. Com isso, é elaborado um plano de tratamento sob medida.
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Como agendar o primeiro horário?</span>
-                        <span class="faq-icon">▼</span>
-                    </button>
-                    <div class="faq-answer">
-                        O agendamento é feito diretamente pelo WhatsApp nos números (11) 99808-5565 ou (11) 98555-9083. Você nos informa a localização e a condição clínica, e combinamos o melhor dia e horário na semana.
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -1924,7 +1802,7 @@
                         </li>
                         <li style="display:flex;align-items:center;gap:8px;">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            <span>Atendimento Domiciliar em SP</span>
+                            <span>R. Inocêncio de Camargo, 41 - Pedreira, SP</span>
                         </li>
                     </ul>
                 </div>
