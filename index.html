@@ -679,6 +679,46 @@
             color: var(--slate-500);
         }
 
+        /* GALLERY CARDS */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .gallery-card {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            background: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        .gallery-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+        .gallery-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center 20%;
+            display: block;
+        }
+        .gallery-info {
+            padding: 22px;
+        }
+        .gallery-info strong {
+            color: #064e3b;
+            font-size: 1.15rem;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .gallery-info p {
+            font-size: 0.9rem;
+            color: #64748b;
+            line-height: 1.5;
+        }
+
         /* HOW IT WORKS */
         .steps-grid {
             display: grid;
@@ -1039,7 +1079,7 @@
             .hero-buttons { justify-content: center; }
             .hero-trust { justify-content: center; }
             .hero-image-wrapper { margin-top: 20px; }
-            .benefits-grid, .services-grid, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .benefits-grid, .services-grid, .testimonials-grid, .gallery-grid { grid-template-columns: repeat(2, 1fr); }
             .about-grid { grid-template-columns: 1fr; gap: 40px; }
             .steps-grid { grid-template-columns: repeat(2, 1fr); }
             .coverage-grid { grid-template-columns: 1fr; }
@@ -1056,7 +1096,8 @@
             .nav-links, .nav-cta { display: none; }
             .hero-title { font-size: 2.1rem; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .benefits-grid, .services-grid, .testimonials-grid { grid-template-columns: 1fr; }
+            .benefits-grid, .services-grid, .testimonials-grid, .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-img { height: 240px; }
             .steps-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; }
             .hero-badge-float-1, .hero-badge-float-2 { display: none; }
@@ -1556,28 +1597,28 @@
                 <p class="section-desc">Ambiente acolhedor, técnicas baseadas em evidências científicas e total cumplicidade com o paciente.</p>
             </div>
 
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
-                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <img src="images/foto_domiciliar_lar.jpg" alt="Atendimento Domiciliar no Lar" style="width:100%;height:300px;object-fit:cover;object-position:center 20%;display:block;">
-                    <div style="padding:22px;">
-                        <strong style="color:#064e3b;font-size:1.15rem;display:block;margin-bottom:6px;">Atendimento Domiciliar no Lar</strong>
-                        <p style="font-size:0.9rem;color:#64748b;line-height:1.5;">Reabilitação ortopédica e fortalecimento com foco na autonomia, alívio de dores e recuperação no ambiente real do paciente.</p>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="images/foto_domiciliar_lar.jpg" alt="Atendimento Domiciliar no Lar" class="gallery-img">
+                    <div class="gallery-info">
+                        <strong>Atendimento Domiciliar no Lar</strong>
+                        <p>Reabilitação ortopédica e fortalecimento com foco na autonomia, alívio de dores e recuperação no ambiente real do paciente.</p>
                     </div>
                 </div>
 
-                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <img src="images/foto_geriatrica_terceira_idade.jpg" alt="Fisioterapia Geriátrica e Longevidade" style="width:100%;height:300px;object-fit:cover;object-position:center 15%;display:block;">
-                    <div style="padding:22px;">
-                        <strong style="color:#064e3b;font-size:1.15rem;display:block;margin-bottom:6px;">Fisioterapia Geriátrica & Longevidade</strong>
-                        <p style="font-size:0.9rem;color:#64748b;line-height:1.5;">Atenção humanizada e especializada para idosos: treino de marcha, prevenção de quedas, equilíbrio e manutenção da vitalidade.</p>
+                <div class="gallery-card">
+                    <img src="images/foto_geriatrica_terceira_idade.jpg" alt="Fisioterapia Geriátrica e Longevidade" class="gallery-img">
+                    <div class="gallery-info">
+                        <strong>Fisioterapia Geriátrica & Longevidade</strong>
+                        <p>Atenção humanizada e especializada para idosos: treino de marcha, prevenção de quedas, equilíbrio e manutenção da vitalidade.</p>
                     </div>
                 </div>
 
-                <div style="border-radius:20px;overflow:hidden;box-shadow:var(--shadow-md);background:white;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
-                    <img src="images/foto_neuro_autonomia.jpg" alt="Reabilitação Neurofuncional" style="width:100%;height:300px;object-fit:cover;object-position:center 20%;display:block;">
-                    <div style="padding:22px;">
-                        <strong style="color:#064e3b;font-size:1.15rem;display:block;margin-bottom:6px;">Reabilitação Neurofuncional</strong>
-                        <p style="font-size:0.9rem;color:#64748b;line-height:1.5;">Estímulo motor e reaprendizado funcional para pacientes neurológicos e cadeirantes, promovendo dignidade e autonomia.</p>
+                <div class="gallery-card">
+                    <img src="images/foto_neuro_autonomia.jpg" alt="Reabilitação Neurofuncional" class="gallery-img">
+                    <div class="gallery-info">
+                        <strong>Reabilitação Neurofuncional</strong>
+                        <p>Estímulo motor e reaprendizado funcional para pacientes neurológicos e cadeirantes, promovendo dignidade e autonomia.</p>
                     </div>
                 </div>
             </div>
