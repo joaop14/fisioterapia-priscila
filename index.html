@@ -1066,6 +1066,160 @@
         }
 
         /* RESPONSIVE */
+        
+        /* MOBILE MENU BUTTON & DRAWER */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--primary-dark);
+            border-radius: 10px;
+            transition: background 0.2s;
+        }
+        .menu-toggle:hover {
+            background: var(--primary-subtle);
+        }
+
+        .mobile-drawer {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 82%;
+            max-width: 320px;
+            height: 100vh;
+            background: white;
+            z-index: 9999;
+            box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+            transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+        }
+        .mobile-drawer.open {
+            right: 0;
+        }
+        .drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(4px);
+            z-index: 9998;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .drawer-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .drawer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 20px;
+        }
+        .drawer-close {
+            background: #f1f5f9;
+            border: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--slate-600);
+        }
+        .drawer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex-grow: 1;
+        }
+        .drawer-links a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--dark);
+            padding: 10px 14px;
+            border-radius: 12px;
+            transition: all 0.2s;
+        }
+        .drawer-links a:hover {
+            background: var(--primary-subtle);
+            color: var(--primary);
+        }
+        .drawer-links a.highlight-review {
+            background: #fef3c7;
+            color: #b45309;
+            border: 1px solid #fde68a;
+        }
+        .drawer-cta {
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        /* MOBILE QUICK FILTERS / PILLS BAR */
+        .mobile-quick-filters {
+            display: none;
+            background: white;
+            padding: 10px 16px;
+            border-bottom: 1px solid #e2e8f0;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            position: sticky;
+            top: 70px;
+            z-index: 45;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+        .mobile-quick-filters::-webkit-scrollbar {
+            display: none;
+        }
+        .filter-chips-list {
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .filter-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 14px;
+            border-radius: 9999px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            background: #f1f5f9;
+            color: var(--slate-600);
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+        .filter-chip:active, .filter-chip:hover {
+            background: var(--primary-subtle);
+            color: var(--primary-dark);
+            border-color: var(--primary);
+        }
+        .filter-chip.chip-accent {
+            background: #fef3c7;
+            color: #b45309;
+            border-color: #fde68a;
+            font-weight: 700;
+        }
+
         @media (max-width: 1200px) {
             .nav-links { gap: 12px; }
             .nav-links a { font-size: 0.82rem; }
@@ -1094,6 +1248,9 @@
 
         @media (max-width: 768px) {
             .nav-links, .nav-cta { display: none; }
+            .menu-toggle { display: flex; align-items: center; justify-content: center; }
+            .mobile-quick-filters { display: block; }
+            .nav-container { height: 70px; }
             .hero-title { font-size: 2.1rem; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
             .benefits-grid, .services-grid, .testimonials-grid, .gallery-grid { grid-template-columns: 1fr; }
@@ -1154,8 +1311,62 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
                 Agendar no WhatsApp
             </a>
+
+            <!-- BOTÃO MENU HAMBÚRGUER (CELULAR) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu de Navegação">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </div>
+
+        <!-- BARRA DE FILTROS RÁPIDOS / ATALHOS NO CELULAR -->
+        <nav class="mobile-quick-filters" aria-label="Filtros rápidos de navegação">
+            <div class="filter-chips-list">
+                <a href="#depoimentos" class="filter-chip chip-accent">⭐ Avaliações (5.0)</a>
+                <a href="#especialidades" class="filter-chip">🩺 Especialidades</a>
+                <a href="#diferenciais" class="filter-chip">✨ Vantagens</a>
+                <a href="#sobre" class="filter-chip">👩‍⚕️ Sobre a Dra.</a>
+                <a href="#como-funciona" class="filter-chip">📋 Como Funciona</a>
+                <a href="#regioes" class="filter-chip">📍 Onde Atendemos</a>
+                <a href="#duvidas" class="filter-chip">❓ Dúvidas</a>
+            </div>
+        </nav>
     </header>
+
+    <!-- MENU GAVETA LATERAL (MOBILE DRAWER) -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div style="display:flex;align-items:center;gap:10px;">
+                <div class="brand-icon" style="width:36px;height:36px;font-size:1.1rem;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </div>
+                <strong style="font-size:1rem;color:var(--primary-dark);">Menu do Site</strong>
+            </div>
+            <button class="drawer-close" id="drawerClose" aria-label="Fechar menu">✕</button>
+        </div>
+
+        <ul class="drawer-links">
+            <li><a href="#inicio">🏠 Início</a></li>
+            <li><a href="#depoimentos" class="highlight-review">⭐ Avaliações no Google (Nota 5.0)</a></li>
+            <li><a href="#especialidades">🩺 Especialidades</a></li>
+            <li><a href="#diferenciais">✨ Vantagens do Atendimento</a></li>
+            <li><a href="#sobre">👩‍⚕️ Sobre a Dra. Priscila</a></li>
+            <li><a href="#como-funciona">📋 Como Funciona a Sessão</a></li>
+            <li><a href="#regioes">📍 Regiões Atendidas</a></li>
+            <li><a href="#duvidas">❓ Dúvidas Frequentes</a></li>
+        </ul>
+
+        <div class="drawer-cta">
+            <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20fisioterapia%20domiciliar." target="_blank" class="btn-primary" style="width:100%;justify-content:center;padding:14px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                Chamar no WhatsApp
+            </a>
+        </div>
+    </div>
 
     <!-- HERO SECTION -->
     <section class="hero" id="inicio">
@@ -1767,6 +1978,69 @@
         </div>
     </section>
 
+        <!-- SEÇÃO DÚVIDAS FREQUENTES (FAQ) -->
+    <section class="section" id="duvidas" style="background:#ffffff;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Tire suas dúvidas</span>
+                <h2 class="section-title font-serif">Perguntas Frequentes</h2>
+                <p class="section-desc">Principais esclarecimentos sobre como funciona o atendimento domiciliar em São Paulo.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como funciona a primeira avaliação domiciliar?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A Dra. Priscila vai até a sua residência com horário agendado. É realizada uma avaliação física minuciosa, anamnese completa do histórico clínico, testes de mobilidade, equilíbrio e força. A partir disso, é estruturado um plano de reabilitação 100% individualizado para as necessidades do paciente.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>A fisioterapeuta leva todos os aparelhos e materiais?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Você não precisa se preocupar com nada. A Dra. Priscila leva todos os equipamentos e recursos necessários para o atendimento (faixas elásticas, recursos de eletroterapia/analgesia, pesos terapêuticos, cones e materiais para treino de equilíbrio e marcha).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Vocês atendem por plano de saúde (convênio)?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O atendimento é particular para garantir sessões completas, dedicadas e sem pressa. No entanto, emitimos recibo e relatório fisioterapêutico oficial com CREFITO para que você solicite o reembolso junto ao seu convênio médico (Bradesco, SulAmérica, Amil, Porto Seguro, etc.).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quais regiões de São Paulo são atendidas?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Atendemos prioritariamente a Zona Sul de São Paulo (Pedreira, Santo Amaro, Interlagos, Campo Belo, Brooklin, Moema, Vila Mariana, Jabaquara, Socorro e imediações), além de outras regiões da capital sob consulta prévia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como faço para agendar a primeira sessão?</span>
+                        <span class="faq-icon">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Basta clicar em qualquer botão de WhatsApp aqui no site ou mandar uma mensagem para <strong>(11) 99808-5565</strong>. Conversamos sobre o caso do paciente, verificamos a disponibilidade de horários e agendamos a visita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CALL TO ACTION BANNER -->
     <section class="cta-banner">
         <div class="container">
@@ -1869,6 +2143,34 @@
 
     <!-- JAVASCRIPT FOR ACCORDION & INTERACTIONS -->
     <script>
+        
+        // Mobile Drawer Menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const drawerClose = document.getElementById('drawerClose');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+
+        function openDrawer() {
+            mobileDrawer.classList.add('open');
+            drawerOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            mobileDrawer.classList.remove('open');
+            drawerOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        if (menuToggle) menuToggle.addEventListener('click', openDrawer);
+        if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+        if (drawerOverlay) drawerOverlay.addEventListener('click', closeDrawer);
+
+        // Close drawer when clicking any link inside it
+        document.querySelectorAll('.drawer-links a').forEach(link => {
+            link.addEventListener('click', closeDrawer);
+        });
+
         document.querySelectorAll('.faq-question').forEach(button => {
             button.addEventListener('click', () => {
                 const faqItem = button.parentElement;
