@@ -623,6 +623,38 @@
             background: var(--primary);
             color: white;
         }
+        .service-card-featured {
+            border: 2.5px solid var(--primary);
+            box-shadow: 0 16px 32px -6px rgba(13, 124, 102, 0.22);
+            position: relative;
+            background: linear-gradient(180deg, #ffffff 0%, #f4fbf9 100%);
+        }
+        .service-card-featured .service-card-top {
+            background: linear-gradient(135deg, #043927 0%, #0d7c66 60%, #d97706 100%);
+        }
+        .neuro-highlight-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fde68a;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+            width: fit-content;
+        }
+        .service-btn-featured {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 14px rgba(13, 124, 102, 0.28);
+        }
+        .service-btn-featured:hover {
+            background: var(--primary-dark);
+            color: white;
+        }
 
         /* GALLERY CARDS */
         .gallery-grid {
@@ -637,14 +669,35 @@
             background: white;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 1px solid #e2e8f0;
+            position: relative;
         }
         .gallery-card:hover {
             transform: translateY(-4px);
             box-shadow: var(--shadow-xl);
         }
+        .gallery-card-featured {
+            border: 2.5px solid var(--primary);
+            box-shadow: 0 16px 32px -6px rgba(13, 124, 102, 0.24);
+            background: linear-gradient(180deg, #ffffff 0%, #f4fbf9 100%);
+        }
+        .gallery-badge-featured {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(6, 78, 59, 0.92);
+            color: #fef3c7;
+            font-size: 0.76rem;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 999px;
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(254, 243, 199, 0.4);
+            z-index: 2;
+            letter-spacing: 0.02em;
+        }
         .gallery-img {
             width: 100%;
-            height: 280px;
+            height: 340px;
             object-fit: cover;
             object-position: center 20%;
             display: block;
@@ -1171,7 +1224,7 @@
     <!-- NAVBAR (CLEAN: SEM BOTÃO VERDE DE AGENDAMENTO NO DESKTOP E SEM HAMBÚRGUER NO MOBILE) -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="#" class="brand-logo">
+            <a href="#inicio" class="brand-logo">
                 <div class="brand-icon">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                 </div>
@@ -1386,21 +1439,22 @@
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="service-card">
+                <!-- Card 2 (DESTAQUE NEUROFUNCIONAL) -->
+                <div class="service-card service-card-featured">
                     <div class="service-card-top">
-                        <span style="font-weight:700;font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;">Neurologia</span>
+                        <span style="font-weight:700;font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;">★ Especialidade em Destaque • Neurologia</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
                     </div>
                     <div class="service-card-body">
+                        <div class="neuro-highlight-pill">🎓 Pós-Graduada em Fisioterapia Neurofuncional</div>
                         <h4>Reabilitação Neurofuncional</h4>
-                        <p>Estímulo constante para o reaprendizado motor em pacientes neurológicos, promovendo dignidade e independência funcional.</p>
+                        <p>Estímulo constante para o reaprendizado motor e cognitivo em pacientes neurológicos, promovendo dignidade e independência funcional.</p>
                         <ul class="service-list">
                             <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Pós-AVC (Acidente Vascular Cerebral)</li>
-                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Doença de Parkinson e Esclerose Múltipla</li>
-                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Pacientes cadeirantes e restritos ao leito</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Doença de Parkinson, Alzheimer e Esclerose Múltipla</li>
+                            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Estímulo motor, equilíbrio, coordenação e autonomia</li>
                         </ul>
-                        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Reabilita%C3%A7%C3%A3o%20Neurofuncional." target="_blank" class="service-btn">
+                        <a href="https://wa.me/5511998085565?text=Ol%C3%A1%2C%20Dra.%20Priscila!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Reabilita%C3%A7%C3%A3o%20Neurofuncional." target="_blank" class="service-btn service-btn-featured">
                             Agendar no WhatsApp →
                         </a>
                     </div>
@@ -1515,11 +1569,13 @@
                     </div>
                 </div>
 
-                <div class="gallery-card">
-                    <img src="images/foto_neuro_autonomia.jpg" alt="Reabilitação Neurofuncional" class="gallery-img">
+                <div class="gallery-card gallery-card-featured">
+                    <span class="gallery-badge-featured">★ Pós-Graduada em Neurofuncional</span>
+                    <img src="images/foto_neuro_autonomia.jpg" alt="Reabilitação Neurofuncional - Dra. Priscila Santana" class="gallery-img" style="object-position: center 45%;">
                     <div class="gallery-info">
+                        <div class="neuro-highlight-pill" style="margin-bottom:8px;">🎓 Especialidade em Destaque</div>
                         <strong>Reabilitação Neurofuncional</strong>
-                        <p>Estímulo motor e reaprendizado funcional para pacientes neurológicos e cadeirantes, promovendo dignidade e autonomia.</p>
+                        <p>Estímulo motor, cognitivo e reaprendizado funcional para pacientes neurológicos (Pós-AVC, Parkinson e Alzheimer), promovendo dignidade e autonomia.</p>
                     </div>
                 </div>
             </div>
@@ -1533,7 +1589,7 @@
                 <img src="images/foto_priscila_jaleco.jpg" alt="Dra. Priscila de Santana Souza Fisioterapeuta" class="about-main-img">
                 <div class="about-experience-card">
                     <strong>CREFITO-3</strong>
-                    <span>Registro Oficial nº 452755-F • Fisioterapeuta Especialista</span>
+                    <span>Registro Oficial nº 452755-F • Pós-Graduada em Neurofuncional</span>
                 </div>
             </div>
 
@@ -1541,7 +1597,7 @@
                 <span class="section-subtitle">Conheça sua fisioterapeuta</span>
                 <h2 class="section-title font-serif" style="text-align:left;margin-bottom:20px;">Dra. Priscila de Santana Souza</h2>
                 <p style="font-size:1.05rem;color:var(--slate-600);line-height:1.7;margin-bottom:16px;">
-                    Com formação sólida e dedicação exclusiva à reabilitação no ambiente do paciente, meu trabalho é guiado pela empatia, respeito aos limites de cada pessoa e busca constante pela recuperação da autonomia e da qualidade de vida.
+                    Fisioterapeuta <strong>Pós-Graduada em Fisioterapia Neurofuncional</strong>, com formação sólida e dedicação exclusiva à reabilitação no ambiente do paciente. Meu trabalho é guiado pela empatia, respeito aos limites de cada pessoa e busca constante pela recuperação da autonomia e da qualidade de vida.
                 </p>
                 <p style="font-size:1.05rem;color:var(--slate-600);line-height:1.7;">
                     Acredito que a verdadeira reabilitação acontece quando o paciente se sente acolhido e seguro em seu próprio lar, ao lado de sua família, com um plano terapêutico feito sob medida para sua história.
@@ -1555,15 +1611,15 @@
                     <div class="credential-item">
                         <div class="credential-icon">🎓</div>
                         <div class="credential-text">
-                            <strong>Graduação em Fisioterapia</strong>
-                            <span>Formação completa e registro no CREFITO-3</span>
+                            <strong>Pós-Graduada em Neurofuncional</strong>
+                            <span>Especialização em Fisioterapia Neurofuncional • CREFITO-3</span>
                         </div>
                     </div>
                     <div class="credential-item">
                         <div class="credential-icon">🩺</div>
                         <div class="credential-text">
-                            <strong>Foco em Geriatria & Neuro</strong>
-                            <span>Capacitação contínua em saúde do idoso</span>
+                            <strong>Destaque em Neuro & Geriatria</strong>
+                            <span>Reabilitação pós-AVC, neurofuncional e saúde do idoso</span>
                         </div>
                     </div>
                     <div class="credential-item">
